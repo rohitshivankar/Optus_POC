@@ -15,6 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WeatherTableViewCell" rowHeight="90" id="ftU-4o-w2C" customClass="WeatherTableViewCell" customModule="Optus_POC" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="90"/>
@@ -47,6 +48,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstItem="pX6-8U-E4M" firstAttribute="trailing" secondItem="swk-Qe-hcB" secondAttribute="trailingMargin" id="1tW-64-3eP"/>
                                         <constraint firstItem="pX6-8U-E4M" firstAttribute="leading" secondItem="r7T-a4-bZZ" secondAttribute="trailing" constant="8" symbolic="YES" id="9ih-hF-2KU"/>
@@ -60,6 +62,7 @@
                                         <constraint firstItem="bVa-pZ-NZo" firstAttribute="leading" secondItem="swk-Qe-hcB" secondAttribute="leadingMargin" id="x1Y-ru-pll"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="cityName" destination="r7T-a4-bZZ" id="6a0-ef-zTE"/>
                                     <outlet property="cityTemperature" destination="pX6-8U-E4M" id="7Ym-lT-9xn"/>
