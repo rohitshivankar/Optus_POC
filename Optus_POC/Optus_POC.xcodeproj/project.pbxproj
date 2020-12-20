@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		F99B165D258F3A7F00AB95FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B165C258F3A7F00AB95FE /* AppDelegate.swift */; };
 		F99B165F258F3A7F00AB95FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B165E258F3A7F00AB95FE /* SceneDelegate.swift */; };
-		F99B1661258F3A7F00AB95FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B1660258F3A7F00AB95FE /* ViewController.swift */; };
+		F99B1661258F3A7F00AB95FE /* WeatherListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B1660258F3A7F00AB95FE /* WeatherListTableViewController.swift */; };
 		F99B1664258F3A7F00AB95FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F99B1662258F3A7F00AB95FE /* Main.storyboard */; };
 		F99B1666258F3A8500AB95FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F99B1665258F3A8500AB95FE /* Assets.xcassets */; };
 		F99B1669258F3A8500AB95FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F99B1667258F3A8500AB95FE /* LaunchScreen.storyboard */; };
 		F99B1674258F3A8600AB95FE /* Optus_POCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B1673258F3A8600AB95FE /* Optus_POCTests.swift */; };
 		F99B167F258F3A8600AB95FE /* Optus_POCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B167E258F3A8600AB95FE /* Optus_POCUITests.swift */; };
+		F9B84ABE258F92670080B845 /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B84ABD258F92670080B845 /* WeatherTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,7 @@
 		F99B1659258F3A7F00AB95FE /* Optus_POC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Optus_POC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F99B165C258F3A7F00AB95FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F99B165E258F3A7F00AB95FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F99B1660258F3A7F00AB95FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F99B1660258F3A7F00AB95FE /* WeatherListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListTableViewController.swift; sourceTree = "<group>"; };
 		F99B1663258F3A7F00AB95FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F99B1665258F3A8500AB95FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F99B1668258F3A8500AB95FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		F99B167A258F3A8600AB95FE /* Optus_POCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Optus_POCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F99B167E258F3A8600AB95FE /* Optus_POCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optus_POCUITests.swift; sourceTree = "<group>"; };
 		F99B1680258F3A8600AB95FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9B84ABD258F92670080B845 /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +101,12 @@
 		F99B165B258F3A7F00AB95FE /* Optus_POC */ = {
 			isa = PBXGroup;
 			children = (
-				F99B165C258F3A7F00AB95FE /* AppDelegate.swift */,
-				F99B165E258F3A7F00AB95FE /* SceneDelegate.swift */,
-				F99B1660258F3A7F00AB95FE /* ViewController.swift */,
+				F9B84AB9258F726E0080B845 /* App Deligate */,
+				F9B84AB8258F72540080B845 /* Network Manager */,
+				F9B84AB7258F721C0080B845 /* Utilities */,
+				F9B84AB6258F71E60080B845 /* View */,
+				F9B84AB5258F71DB0080B845 /* View Model */,
+				F9B84AB4258F71CC0080B845 /* Model */,
 				F99B1662258F3A7F00AB95FE /* Main.storyboard */,
 				F99B1665258F3A8500AB95FE /* Assets.xcassets */,
 				F99B1667258F3A8500AB95FE /* LaunchScreen.storyboard */,
@@ -126,6 +131,52 @@
 				F99B1680258F3A8600AB95FE /* Info.plist */,
 			);
 			path = Optus_POCUITests;
+			sourceTree = "<group>";
+		};
+		F9B84AB4258F71CC0080B845 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F9B84AB5258F71DB0080B845 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		F9B84AB6258F71E60080B845 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F99B1660258F3A7F00AB95FE /* WeatherListTableViewController.swift */,
+				F9B84ABD258F92670080B845 /* WeatherTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F9B84AB7258F721C0080B845 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F9B84AB8258F72540080B845 /* Network Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Network Manager";
+			sourceTree = "<group>";
+		};
+		F9B84AB9258F726E0080B845 /* App Deligate */ = {
+			isa = PBXGroup;
+			children = (
+				F99B165C258F3A7F00AB95FE /* AppDelegate.swift */,
+				F99B165E258F3A7F00AB95FE /* SceneDelegate.swift */,
+			);
+			path = "App Deligate";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +309,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F99B1661258F3A7F00AB95FE /* ViewController.swift in Sources */,
+				F9B84ABE258F92670080B845 /* WeatherTableViewCell.swift in Sources */,
+				F99B1661258F3A7F00AB95FE /* WeatherListTableViewController.swift in Sources */,
 				F99B165D258F3A7F00AB95FE /* AppDelegate.swift in Sources */,
 				F99B165F258F3A7F00AB95FE /* SceneDelegate.swift in Sources */,
 			);
