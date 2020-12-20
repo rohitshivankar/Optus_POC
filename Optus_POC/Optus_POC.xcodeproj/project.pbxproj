@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F99B165D258F3A7F00AB95FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B165C258F3A7F00AB95FE /* AppDelegate.swift */; };
+		F99B165F258F3A7F00AB95FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B165E258F3A7F00AB95FE /* SceneDelegate.swift */; };
+		F99B1661258F3A7F00AB95FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B1660258F3A7F00AB95FE /* ViewController.swift */; };
+		F99B1664258F3A7F00AB95FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F99B1662258F3A7F00AB95FE /* Main.storyboard */; };
+		F99B1666258F3A8500AB95FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F99B1665258F3A8500AB95FE /* Assets.xcassets */; };
+		F99B1669258F3A8500AB95FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F99B1667258F3A8500AB95FE /* LaunchScreen.storyboard */; };
+		F99B1674258F3A8600AB95FE /* Optus_POCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B1673258F3A8600AB95FE /* Optus_POCTests.swift */; };
+		F99B167F258F3A8600AB95FE /* Optus_POCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B167E258F3A8600AB95FE /* Optus_POCUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F99B1670258F3A8600AB95FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F99B1651258F3A7F00AB95FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F99B1658258F3A7F00AB95FE;
+			remoteInfo = Optus_POC;
+		};
+		F99B167B258F3A8600AB95FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F99B1651258F3A7F00AB95FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F99B1658258F3A7F00AB95FE;
+			remoteInfo = Optus_POC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F99B1659258F3A7F00AB95FE /* Optus_POC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Optus_POC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F99B165C258F3A7F00AB95FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F99B165E258F3A7F00AB95FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F99B1660258F3A7F00AB95FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F99B1663258F3A7F00AB95FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F99B1665258F3A8500AB95FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F99B1668258F3A8500AB95FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F99B166A258F3A8500AB95FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F99B166F258F3A8600AB95FE /* Optus_POCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Optus_POCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F99B1673258F3A8600AB95FE /* Optus_POCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optus_POCTests.swift; sourceTree = "<group>"; };
+		F99B1675258F3A8600AB95FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F99B167A258F3A8600AB95FE /* Optus_POCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Optus_POCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F99B167E258F3A8600AB95FE /* Optus_POCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optus_POCUITests.swift; sourceTree = "<group>"; };
+		F99B1680258F3A8600AB95FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F99B1656258F3A7F00AB95FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F99B166C258F3A8600AB95FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F99B1677258F3A8600AB95FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F99B1650258F3A7F00AB95FE = {
+			isa = PBXGroup;
+			children = (
+				F99B165B258F3A7F00AB95FE /* Optus_POC */,
+				F99B1672258F3A8600AB95FE /* Optus_POCTests */,
+				F99B167D258F3A8600AB95FE /* Optus_POCUITests */,
+				F99B165A258F3A7F00AB95FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F99B165A258F3A7F00AB95FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F99B1659258F3A7F00AB95FE /* Optus_POC.app */,
+				F99B166F258F3A8600AB95FE /* Optus_POCTests.xctest */,
+				F99B167A258F3A8600AB95FE /* Optus_POCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F99B165B258F3A7F00AB95FE /* Optus_POC */ = {
+			isa = PBXGroup;
+			children = (
+				F99B165C258F3A7F00AB95FE /* AppDelegate.swift */,
+				F99B165E258F3A7F00AB95FE /* SceneDelegate.swift */,
+				F99B1660258F3A7F00AB95FE /* ViewController.swift */,
+				F99B1662258F3A7F00AB95FE /* Main.storyboard */,
+				F99B1665258F3A8500AB95FE /* Assets.xcassets */,
+				F99B1667258F3A8500AB95FE /* LaunchScreen.storyboard */,
+				F99B166A258F3A8500AB95FE /* Info.plist */,
+			);
+			path = Optus_POC;
+			sourceTree = "<group>";
+		};
+		F99B1672258F3A8600AB95FE /* Optus_POCTests */ = {
+			isa = PBXGroup;
+			children = (
+				F99B1673258F3A8600AB95FE /* Optus_POCTests.swift */,
+				F99B1675258F3A8600AB95FE /* Info.plist */,
+			);
+			path = Optus_POCTests;
+			sourceTree = "<group>";
+		};
+		F99B167D258F3A8600AB95FE /* Optus_POCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F99B167E258F3A8600AB95FE /* Optus_POCUITests.swift */,
+				F99B1680258F3A8600AB95FE /* Info.plist */,
+			);
+			path = Optus_POCUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F99B1658258F3A7F00AB95FE /* Optus_POC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F99B1683258F3A8600AB95FE /* Build configuration list for PBXNativeTarget "Optus_POC" */;
+			buildPhases = (
+				F99B1655258F3A7F00AB95FE /* Sources */,
+				F99B1656258F3A7F00AB95FE /* Frameworks */,
+				F99B1657258F3A7F00AB95FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Optus_POC;
+			productName = Optus_POC;
+			productReference = F99B1659258F3A7F00AB95FE /* Optus_POC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F99B166E258F3A8600AB95FE /* Optus_POCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F99B1686258F3A8600AB95FE /* Build configuration list for PBXNativeTarget "Optus_POCTests" */;
+			buildPhases = (
+				F99B166B258F3A8600AB95FE /* Sources */,
+				F99B166C258F3A8600AB95FE /* Frameworks */,
+				F99B166D258F3A8600AB95FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F99B1671258F3A8600AB95FE /* PBXTargetDependency */,
+			);
+			name = Optus_POCTests;
+			productName = Optus_POCTests;
+			productReference = F99B166F258F3A8600AB95FE /* Optus_POCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F99B1679258F3A8600AB95FE /* Optus_POCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F99B1689258F3A8600AB95FE /* Build configuration list for PBXNativeTarget "Optus_POCUITests" */;
+			buildPhases = (
+				F99B1676258F3A8600AB95FE /* Sources */,
+				F99B1677258F3A8600AB95FE /* Frameworks */,
+				F99B1678258F3A8600AB95FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F99B167C258F3A8600AB95FE /* PBXTargetDependency */,
+			);
+			name = Optus_POCUITests;
+			productName = Optus_POCUITests;
+			productReference = F99B167A258F3A8600AB95FE /* Optus_POCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F99B1651258F3A7F00AB95FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					F99B1658258F3A7F00AB95FE = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					F99B166E258F3A8600AB95FE = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = F99B1658258F3A7F00AB95FE;
+					};
+					F99B1679258F3A8600AB95FE = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = F99B1658258F3A7F00AB95FE;
+					};
+				};
+			};
+			buildConfigurationList = F99B1654258F3A7F00AB95FE /* Build configuration list for PBXProject "Optus_POC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F99B1650258F3A7F00AB95FE;
+			productRefGroup = F99B165A258F3A7F00AB95FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F99B1658258F3A7F00AB95FE /* Optus_POC */,
+				F99B166E258F3A8600AB95FE /* Optus_POCTests */,
+				F99B1679258F3A8600AB95FE /* Optus_POCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F99B1657258F3A7F00AB95FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F99B1669258F3A8500AB95FE /* LaunchScreen.storyboard in Resources */,
+				F99B1666258F3A8500AB95FE /* Assets.xcassets in Resources */,
+				F99B1664258F3A7F00AB95FE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F99B166D258F3A8600AB95FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F99B1678258F3A8600AB95FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F99B1655258F3A7F00AB95FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F99B1661258F3A7F00AB95FE /* ViewController.swift in Sources */,
+				F99B165D258F3A7F00AB95FE /* AppDelegate.swift in Sources */,
+				F99B165F258F3A7F00AB95FE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F99B166B258F3A8600AB95FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F99B1674258F3A8600AB95FE /* Optus_POCTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F99B1676258F3A8600AB95FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F99B167F258F3A8600AB95FE /* Optus_POCUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F99B1671258F3A8600AB95FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F99B1658258F3A7F00AB95FE /* Optus_POC */;
+			targetProxy = F99B1670258F3A8600AB95FE /* PBXContainerItemProxy */;
+		};
+		F99B167C258F3A8600AB95FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F99B1658258F3A7F00AB95FE /* Optus_POC */;
+			targetProxy = F99B167B258F3A8600AB95FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F99B1662258F3A7F00AB95FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F99B1663258F3A7F00AB95FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F99B1667258F3A8500AB95FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F99B1668258F3A8500AB95FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F99B1681258F3A8600AB95FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F99B1682258F3A8600AB95FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F99B1684258F3A8600AB95FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Optus_POC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TechMahindra.Optus-POC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F99B1685258F3A8600AB95FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Optus_POC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TechMahindra.Optus-POC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F99B1687258F3A8600AB95FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Optus_POCTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TechMahindra.Optus-POCTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Optus_POC.app/Optus_POC";
+			};
+			name = Debug;
+		};
+		F99B1688258F3A8600AB95FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Optus_POCTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TechMahindra.Optus-POCTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Optus_POC.app/Optus_POC";
+			};
+			name = Release;
+		};
+		F99B168A258F3A8600AB95FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Optus_POCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TechMahindra.Optus-POCUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Optus_POC;
+			};
+			name = Debug;
+		};
+		F99B168B258F3A8600AB95FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Optus_POCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TechMahindra.Optus-POCUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Optus_POC;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F99B1654258F3A7F00AB95FE /* Build configuration list for PBXProject "Optus_POC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F99B1681258F3A8600AB95FE /* Debug */,
+				F99B1682258F3A8600AB95FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F99B1683258F3A8600AB95FE /* Build configuration list for PBXNativeTarget "Optus_POC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F99B1684258F3A8600AB95FE /* Debug */,
+				F99B1685258F3A8600AB95FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F99B1686258F3A8600AB95FE /* Build configuration list for PBXNativeTarget "Optus_POCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F99B1687258F3A8600AB95FE /* Debug */,
+				F99B1688258F3A8600AB95FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F99B1689258F3A8600AB95FE /* Build configuration list for PBXNativeTarget "Optus_POCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F99B168A258F3A8600AB95FE /* Debug */,
+				F99B168B258F3A8600AB95FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F99B1651258F3A7F00AB95FE /* Project object */;
+}
