@@ -29,6 +29,7 @@
 		F9B84AF9259078290080B845 /* AddCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B84AF8259078290080B845 /* AddCityViewController.swift */; };
 		F9B84AFE2590834E0080B845 /* UITableViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B84AFD2590834E0080B845 /* UITableViewControllerExtension.swift */; };
 		F9B84B03259083700080B845 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B84B02259083700080B845 /* Reachability.swift */; };
+		F9B84B082590A15B0080B845 /* WeatherDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B84B072590A15B0080B845 /* WeatherDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		F9B84AF8259078290080B845 /* AddCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCityViewController.swift; sourceTree = "<group>"; };
 		F9B84AFD2590834E0080B845 /* UITableViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewControllerExtension.swift; sourceTree = "<group>"; };
 		F9B84B02259083700080B845 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		F9B84B072590A15B0080B845 /* WeatherDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 				F99B1660258F3A7F00AB95FE /* WeatherListTableViewController.swift */,
 				F9B84ABD258F92670080B845 /* WeatherTableViewCell.swift */,
 				F9B84AF8259078290080B845 /* AddCityViewController.swift */,
+				F9B84B072590A15B0080B845 /* WeatherDetailViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				F9B84AEF259070CE0080B845 /* City.swift in Sources */,
 				F9B84B03259083700080B845 /* Reachability.swift in Sources */,
 				F9B84AC8258FB6840080B845 /* WeatherDataViewModel.swift in Sources */,
+				F9B84B082590A15B0080B845 /* WeatherDetailViewController.swift in Sources */,
 				F9B84AF9259078290080B845 /* AddCityViewController.swift in Sources */,
 				F99B165F258F3A7F00AB95FE /* SceneDelegate.swift in Sources */,
 				F9B84AC3258FB5450080B845 /* Weather.swift in Sources */,
