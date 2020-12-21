@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="agl-no-Zcx">
-    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,16 +14,16 @@
             <objects>
                 <tableViewController id="tD2-Yw-dF7" customClass="WeatherListTableViewController" customModule="Optus_POC" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="M0v-OQ-p0T">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WeatherTableViewCell" rowHeight="90" id="ftU-4o-w2C" customClass="WeatherTableViewCell" customModule="Optus_POC" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="896" height="90"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ftU-4o-w2C" id="swk-Qe-hcB">
-                                    <rect key="frame" x="44" y="0.0" width="808" height="90"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bVa-pZ-NZo">
@@ -33,7 +34,7 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pX6-8U-E4M">
-                                            <rect key="frame" x="738" y="20" width="50" height="50"/>
+                                            <rect key="frame" x="344" y="20" width="50" height="50"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="50" id="TXR-Yr-SCh"/>
                                                 <constraint firstAttribute="height" constant="50" id="qT3-ay-kQt"/>
@@ -43,7 +44,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r7T-a4-bZZ">
-                                            <rect key="frame" x="78" y="25" width="652" height="40"/>
+                                            <rect key="frame" x="78" y="25" width="258" height="40"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -79,7 +80,7 @@
                     <navigationItem key="navigationItem" id="wZt-C5-AUR">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="INF-T0-QPu">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="P79-eb-wIo">
-                                <rect key="frame" x="744" y="7" width="92" height="30"/>
+                                <rect key="frame" x="302" y="7" width="92" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add"/>
                                 <connections>
@@ -98,16 +99,16 @@
             <objects>
                 <tableViewController id="HIP-BT-nh4" customClass="AddCityViewController" customModule="Optus_POC" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1AQ-Vp-1El">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CityTableViewCell" id="8UE-nd-EGP">
-                                <rect key="frame" x="0.0" y="28" width="896" height="43.5"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8UE-nd-EGP" id="41C-BC-TKQ">
-                                    <rect key="frame" x="44" y="0.0" width="808" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </tableViewCellContentView>
@@ -130,7 +131,7 @@
             <objects>
                 <viewController storyboardIdentifier="WeatherDetailViewController" id="6YG-g3-2fv" customClass="WeatherDetailViewController" customModule="Optus_POC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xTL-8b-30u">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="5p6-yo-IXQ">
@@ -138,7 +139,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pune" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDz-9f-OrB">
-                                        <rect key="frame" x="14" y="59" width="386" height="32"/>
+                                        <rect key="frame" x="14" y="92" width="386" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="32" id="OAw-OJ-A1E"/>
                                             <constraint firstAttribute="height" constant="32" id="pbk-s5-edf"/>
@@ -159,7 +160,7 @@
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mostly Cloudy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51c-m3-yfr">
-                                        <rect key="frame" x="14" y="99" width="386" height="25"/>
+                                        <rect key="frame" x="14" y="133" width="386" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="OZf-hg-3LO"/>
                                             <constraint firstAttribute="height" constant="25" id="ueR-qi-Yap"/>
@@ -180,7 +181,7 @@
                                         </variation>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun.max" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="t9j-TB-TVE">
-                                        <rect key="frame" x="132" y="131.5" width="150" height="150.5"/>
+                                        <rect key="frame" x="132" y="159" width="150" height="111"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="Qgu-fM-wKt"/>
@@ -199,7 +200,7 @@
                                         </variation>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="26°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ItE-h5-eOU">
-                                        <rect key="frame" x="132" y="280.5" width="150" height="70"/>
+                                        <rect key="frame" x="132" y="279" width="150" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="Agx-hC-rjZ"/>
                                             <constraint firstAttribute="height" constant="70" id="rwc-EK-JwA"/>
@@ -220,7 +221,7 @@
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TODAY: Broken clouds. The high will be 29 and low of 18" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0r-73-dPU">
-                                        <rect key="frame" x="20" y="361.5" width="380" height="48.5"/>
+                                        <rect key="frame" x="20" y="357" width="380" height="49"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="49" id="Roh-yR-6Ui"/>
                                         </constraints>
@@ -324,14 +325,129 @@
                                     </mask>
                                 </variation>
                             </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LoS-ug-dGc">
+                                <rect key="frame" x="0.0" y="422" width="414" height="474"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2bc-sH-EL5">
+                                    <size key="itemSize" width="158" height="146"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WeatherDetailCollectionViewCell" id="7GZ-xm-BoF" customClass="WeatherDetailCollectionViewCell" customModule="Optus_POC" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="To0-gs-KIb">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pressure" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iK3-pT-Sff">
+                                                    <rect key="frame" x="8" y="34" width="134" height="41"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="41" id="BQt-on-B1c"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20.3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ce-TE-gFu">
+                                                    <rect key="frame" x="8" y="83" width="134" height="42"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="42" id="RY6-uY-H8o"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="4Ce-TE-gFu" firstAttribute="leading" secondItem="To0-gs-KIb" secondAttribute="leading" constant="8" id="8H4-fn-PZU"/>
+                                                <constraint firstItem="iK3-pT-Sff" firstAttribute="leading" secondItem="To0-gs-KIb" secondAttribute="leading" constant="8" id="Fbo-ds-BUb"/>
+                                                <constraint firstItem="4Ce-TE-gFu" firstAttribute="top" secondItem="iK3-pT-Sff" secondAttribute="bottom" constant="8" symbolic="YES" id="JvD-R0-IQd"/>
+                                                <constraint firstAttribute="trailing" secondItem="iK3-pT-Sff" secondAttribute="trailing" constant="8" id="OiX-TF-jHd"/>
+                                                <constraint firstAttribute="bottom" secondItem="4Ce-TE-gFu" secondAttribute="bottom" constant="25" id="PeR-xM-Qbw"/>
+                                                <constraint firstItem="iK3-pT-Sff" firstAttribute="top" secondItem="To0-gs-KIb" secondAttribute="top" constant="34" id="VBR-K4-4du"/>
+                                                <constraint firstAttribute="trailing" secondItem="4Ce-TE-gFu" secondAttribute="trailing" constant="8" id="dX1-ZS-FMX"/>
+                                                <constraint firstAttribute="bottom" secondItem="4Ce-TE-gFu" secondAttribute="bottom" constant="25" id="tWx-xf-YKA"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="PeR-xM-Qbw"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=compact">
+                                                <mask key="constraints">
+                                                    <include reference="PeR-xM-Qbw"/>
+                                                </mask>
+                                            </variation>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="150" height="150"/>
+                                        <connections>
+                                            <outlet property="weatherDescriptionLabel" destination="iK3-pT-Sff" id="AcQ-nP-1UR"/>
+                                            <outlet property="weatherDescriptionValue" destination="4Ce-TE-gFu" id="b77-HN-eVn"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="6YG-g3-2fv" id="wcU-Wv-2Ij"/>
+                                    <outlet property="delegate" destination="6YG-g3-2fv" id="azz-oa-O1r"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qrJ-ni-isG"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="LoS-ug-dGc" firstAttribute="trailing" secondItem="5p6-yo-IXQ" secondAttribute="trailing" id="0ia-Nk-l8u"/>
+                            <constraint firstAttribute="bottom" secondItem="LoS-ug-dGc" secondAttribute="bottom" id="7bj-il-lol"/>
+                            <constraint firstItem="LoS-ug-dGc" firstAttribute="leading" secondItem="5p6-yo-IXQ" secondAttribute="trailing" constant="8" symbolic="YES" id="AWT-rv-Cv7"/>
+                            <constraint firstItem="LoS-ug-dGc" firstAttribute="top" secondItem="qrJ-ni-isG" secondAttribute="top" id="OJm-M5-Nts"/>
+                            <constraint firstAttribute="trailing" secondItem="LoS-ug-dGc" secondAttribute="trailing" id="Y1I-fU-sto"/>
+                            <constraint firstItem="LoS-ug-dGc" firstAttribute="bottom" secondItem="5p6-yo-IXQ" secondAttribute="bottom" id="b7l-be-8BL"/>
+                            <constraint firstItem="LoS-ug-dGc" firstAttribute="leading" secondItem="5p6-yo-IXQ" secondAttribute="leading" id="n7I-0d-Fes"/>
+                            <constraint firstItem="LoS-ug-dGc" firstAttribute="top" secondItem="5p6-yo-IXQ" secondAttribute="bottom" constant="8" symbolic="YES" id="wnH-aQ-lhp"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0ia-Nk-l8u"/>
+                                <exclude reference="7bj-il-lol"/>
+                                <exclude reference="AWT-rv-Cv7"/>
+                                <exclude reference="OJm-M5-Nts"/>
+                                <exclude reference="Y1I-fU-sto"/>
+                                <exclude reference="b7l-be-8BL"/>
+                                <exclude reference="n7I-0d-Fes"/>
+                                <exclude reference="wnH-aQ-lhp"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="AWT-rv-Cv7"/>
+                                <include reference="OJm-M5-Nts"/>
+                                <include reference="Y1I-fU-sto"/>
+                                <include reference="b7l-be-8BL"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="0ia-Nk-l8u"/>
+                                <include reference="7bj-il-lol"/>
+                                <include reference="n7I-0d-Fes"/>
+                                <include reference="wnH-aQ-lhp"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="cityNameLabel" destination="tDz-9f-OrB" id="jmc-JD-tEI"/>
+                        <outlet property="iconImage" destination="t9j-TB-TVE" id="wSF-n6-fXt"/>
+                        <outlet property="longDescriptionLabel" destination="F0r-73-dPU" id="sbN-dv-FDx"/>
+                        <outlet property="shortDescriptionLabel" destination="51c-m3-yfr" id="c2W-DH-1HJ"/>
+                        <outlet property="temperatureLabel" destination="ItE-h5-eOU" id="vck-mS-sUY"/>
+                        <outlet property="weatherCollectionView" destination="LoS-ug-dGc" id="6z2-Dc-07G"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mZa-uI-p2Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2815.8482142857142" y="-175.36231884057972"/>
+            <point key="canvasLocation" x="2813.04347826087" y="-177.45535714285714"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0t3-KU-OX1">
@@ -340,7 +456,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="agl-no-Zcx" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="y8l-SL-q2W">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

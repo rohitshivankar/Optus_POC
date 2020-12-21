@@ -120,7 +120,7 @@ class WeatherListTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let weatherDetailViewController =  storyboard.instantiateViewController(withIdentifier: "WeatherDetailViewController") as! WeatherDetailViewController
-       // weatherDetailViewController.cityWeather = self.savedCities[indexPath.row]
+       weatherDetailViewController.cityWeather = weatherDataModel.weatherListArray[indexPath.row]
         self.navigationController?.pushViewController(weatherDetailViewController, animated: true)
     }
     

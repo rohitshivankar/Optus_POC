@@ -30,6 +30,7 @@
 		F9B84AFE2590834E0080B845 /* UITableViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B84AFD2590834E0080B845 /* UITableViewControllerExtension.swift */; };
 		F9B84B03259083700080B845 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B84B02259083700080B845 /* Reachability.swift */; };
 		F9B84B082590A15B0080B845 /* WeatherDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B84B072590A15B0080B845 /* WeatherDetailViewController.swift */; };
+		F9B84B0D2590D6F90080B845 /* WeatherDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B84B0C2590D6F90080B845 /* WeatherDetailCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		F9B84AFD2590834E0080B845 /* UITableViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewControllerExtension.swift; sourceTree = "<group>"; };
 		F9B84B02259083700080B845 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		F9B84B072590A15B0080B845 /* WeatherDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailViewController.swift; sourceTree = "<group>"; };
+		F9B84B0C2590D6F90080B845 /* WeatherDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 				F9B84ABD258F92670080B845 /* WeatherTableViewCell.swift */,
 				F9B84AF8259078290080B845 /* AddCityViewController.swift */,
 				F9B84B072590A15B0080B845 /* WeatherDetailViewController.swift */,
+				F9B84B0C2590D6F90080B845 /* WeatherDetailCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				F99B1661258F3A7F00AB95FE /* WeatherListTableViewController.swift in Sources */,
 				F9B84AD7258FC2CA0080B845 /* Constant.swift in Sources */,
 				F9B84ACD258FB79D0080B845 /* UserDefault+Helper.swift in Sources */,
+				F9B84B0D2590D6F90080B845 /* WeatherDetailCollectionViewCell.swift in Sources */,
 				F9B84AE1258FC4180080B845 /* UIImageView+URLImage.swift in Sources */,
 				F99B165D258F3A7F00AB95FE /* AppDelegate.swift in Sources */,
 				F9B84AD2258FB8730080B845 /* NetworkManager.swift in Sources */,
