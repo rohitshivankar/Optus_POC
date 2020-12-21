@@ -34,6 +34,14 @@ struct Coord: Codable {
 
 struct Sys: Codable {
     let timezone, sunrise, sunset: Int
+    
+    var localSunriseTime: String {
+        return sunrise.formatDate(timezoneOffset: timezone)
+    }
+    
+    var localSunsetTime: String {
+        return sunset.formatDate(timezoneOffset: timezone)
+    }
 }
 
 struct WeatherData: Codable, Identifiable {

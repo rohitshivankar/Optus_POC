@@ -31,6 +31,9 @@
 		F9B84B03259083700080B845 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B84B02259083700080B845 /* Reachability.swift */; };
 		F9B84B082590A15B0080B845 /* WeatherDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B84B072590A15B0080B845 /* WeatherDetailViewController.swift */; };
 		F9B84B0D2590D6F90080B845 /* WeatherDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B84B0C2590D6F90080B845 /* WeatherDetailCollectionViewCell.swift */; };
+		F9B84B122590E1910080B845 /* WeatherDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B84B112590E1910080B845 /* WeatherDetailViewModel.swift */; };
+		F9B84B172590E1C50080B845 /* WeatherItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B84B162590E1C50080B845 /* WeatherItem.swift */; };
+		F9B84B1C2590EB8F0080B845 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B84B1B2590EB8F0080B845 /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +84,9 @@
 		F9B84B02259083700080B845 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		F9B84B072590A15B0080B845 /* WeatherDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailViewController.swift; sourceTree = "<group>"; };
 		F9B84B0C2590D6F90080B845 /* WeatherDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		F9B84B112590E1910080B845 /* WeatherDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailViewModel.swift; sourceTree = "<group>"; };
+		F9B84B162590E1C50080B845 /* WeatherItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherItem.swift; sourceTree = "<group>"; };
+		F9B84B1B2590EB8F0080B845 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +175,7 @@
 			children = (
 				F9B84AC2258FB5450080B845 /* Weather.swift */,
 				F9B84AEE259070CE0080B845 /* City.swift */,
+				F9B84B162590E1C50080B845 /* WeatherItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -178,6 +185,7 @@
 			children = (
 				F9B84AC7258FB6840080B845 /* WeatherDataViewModel.swift */,
 				F9B84AF3259070FE0080B845 /* AddCityViewModel.swift */,
+				F9B84B112590E1910080B845 /* WeatherDetailViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -197,6 +205,7 @@
 		F9B84AB7258F721C0080B845 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				F9B84B1B2590EB8F0080B845 /* Extension.swift */,
 				F9B84B02259083700080B845 /* Reachability.swift */,
 				F9B84AFD2590834E0080B845 /* UITableViewControllerExtension.swift */,
 				F9B84AE0258FC4180080B845 /* UIImageView+URLImage.swift */,
@@ -372,11 +381,14 @@
 				F9B84AE1258FC4180080B845 /* UIImageView+URLImage.swift in Sources */,
 				F99B165D258F3A7F00AB95FE /* AppDelegate.swift in Sources */,
 				F9B84AD2258FB8730080B845 /* NetworkManager.swift in Sources */,
+				F9B84B122590E1910080B845 /* WeatherDetailViewModel.swift in Sources */,
+				F9B84B172590E1C50080B845 /* WeatherItem.swift in Sources */,
 				F9B84AEF259070CE0080B845 /* City.swift in Sources */,
 				F9B84B03259083700080B845 /* Reachability.swift in Sources */,
 				F9B84AC8258FB6840080B845 /* WeatherDataViewModel.swift in Sources */,
 				F9B84B082590A15B0080B845 /* WeatherDetailViewController.swift in Sources */,
 				F9B84AF9259078290080B845 /* AddCityViewController.swift in Sources */,
+				F9B84B1C2590EB8F0080B845 /* Extension.swift in Sources */,
 				F99B165F258F3A7F00AB95FE /* SceneDelegate.swift in Sources */,
 				F9B84AC3258FB5450080B845 /* Weather.swift in Sources */,
 				F9B84AF4259070FE0080B845 /* AddCityViewModel.swift in Sources */,

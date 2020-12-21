@@ -11,6 +11,7 @@ import UIKit
 
 class WeatherDetailViewController: UIViewController {
     
+    let weatherDetailViewModel = WeatherDetailViewModel()
     @IBOutlet var cityNameLabel: UILabel!
     @IBOutlet var shortDescriptionLabel: UILabel!
     @IBOutlet var iconImage: UIImageView!
@@ -27,9 +28,17 @@ class WeatherDetailViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        weatherDetailViewModel.setWetherItemData(cityWeather: cityWeather!)
+        
+        if(cityWeather!.isDay){
+            self.view.backgroundColor = UIColor(patternImage: UIImage(named:"Sun")!)
+        } else {
+            self.view.backgroundColor = UIColor(patternImage: UIImage(named:"Night")!)
+        }
+        
         // hide the navigation bar
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
-        //weatherCollectionView.reloadData()
+        //self.navigationController?.setNavigationBarHidden(true, animated: false)
+        weatherCollectionView.reloadData()
     }
     
     func configureData() {
@@ -42,7 +51,7 @@ class WeatherDetailViewController: UIViewController {
         
         temperatureLabel.text = Constant.convertTempFromKelvinToCelcius(kelvinTemprecture: (cityWeather?.main.temp)!)//cityWeather?.main.temp.formatTempString()
         
-        longDescriptionLabel.text = "TODAY: \((cityWeather?.weather[0].description)!). The high will be \(Constant.convertTempFromKelvinToCelcius(kelvinTemprecture: (cityWeather?.main.temp_max)!)) and a low of \(Constant.convertTempFromKelvinToCelcius(kelvinTemprecture: (cityWeather?.main.temp_min)!))."
+        longDescriptionLabel.text = "TODAY: \((cityWeather?.weather[0].description)!) with high of \(Constant.convertTempFromKelvinToCelcius(kelvinTemprecture: (cityWeather?.main.temp_max)!)) and low of \(Constant.convertTempFromKelvinToCelcius(kelvinTemprecture: (cityWeather?.main.temp_min)!))."
     }
     
 }
@@ -51,7 +60,7 @@ class WeatherDetailViewController: UIViewController {
 extension WeatherDetailViewController: UICollectionViewDelegate,UICollectionViewDataSource {
     
 func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return 5
+    return weatherDetailViewModel.completeWeatherItemList.count
 }
 
 func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -60,8 +69,8 @@ func collectionView(_ collectionView: UICollectionView, layout collectionViewLay
 
 func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "WeatherDetailCollectionViewCell", for: indexPath) as! WeatherDetailCollectionViewCell
-    cell.weatherDescriptionLabel.text = "Pressure"
-    cell.weatherDescriptionValue.text = "34"
+    cell.weatherDescriptionLabel.text = weatherDetailViewModel.completeWeatherItemList[indexPath.row].itemName
+    cell.weatherDescriptionValue.text = weatherDetailViewModel.completeWeatherItemList[indexPath.row].itemValue
     return cell
 }
 }
