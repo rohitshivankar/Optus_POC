@@ -61,4 +61,22 @@ class UserDefaultHelper {
         let defaultUnit = UserDefaults.standard
         return defaultUnit.value(forKey: "DefaultUnit") as! String
     }
+    
+    /// Method to save selected city ID into user default
+    ///
+    /// - Parameter cityData: cityData object from which we can retrive the cityID whcih will be stored in user default
+    static func saveSeclectedCityObject(cityData: City,completion: (Bool) -> Void){
+        var savedCityData = getAllSecletdCitieIDs()
+        if(savedCityData.contains(String(cityData.id))) {
+            completion(false)
+        } else {
+            if savedCityData != "" {
+                savedCityData += ","
+            }
+            savedCityData += String(cityData.id)
+            UserDefaults.standard.set(savedCityData, forKey: "CityData")
+            completion(true)
+        }
+    }
+    
 }

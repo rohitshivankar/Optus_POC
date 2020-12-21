@@ -32,14 +32,17 @@ class WeatherListTableViewController: UITableViewController {
     ///
     /// Use this method to get data from ViewModel class and manage its response status
     func getWeatherDataFromViewModel() {
+        self.addActivityIndicator()
         print("method getWeatherDataFromViewModel called")
         weatherDataModel.getWeatherForCitiesList {result in
+            self.stopActivityIndicator()
             switch(result) {
             case .success:
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }
             case .failure(let error):
+                self.displayErrorMessageWith(messageString: error.localizedDescription)
                 print(error.localizedDescription)
             }
         }
@@ -123,12 +126,20 @@ class WeatherListTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        return true
+        if(indexPath.row != 1 && indexPath.row != 2 && indexPath.row != 0) {
+            return true
+        } else {
+            return false
+        }
     }
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if (editingStyle == .delete) {
-            // handle delete, remove city name from weatehr list
+            // handle delete, remove city name from weather list
+            let cityID = weatherDataModel.weatherListArray[indexPath.row].id
+            UserDefaultHelper.deleteSelectedCityFromUserDefault(cityID: cityID){
+                self.getWeatherDataFromViewModel()
+            }
         }
     }
 }
