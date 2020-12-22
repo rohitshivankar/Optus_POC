@@ -17,6 +17,7 @@ class AddCityViewController: UITableViewController {
         super.viewDidLoad()
         self.title = NSLocalizedString("Add City", comment: "")
         self.view.backgroundColor = UIColor(red: 0/255, green: 197/255, blue: 246/255, alpha: 1)
+        self.tableView.accessibilityIdentifier = "Table-AddCityTableView"
         self.addActivityIndicator()
         setUpSearchViewController()
     }
@@ -53,7 +54,9 @@ class AddCityViewController: UITableViewController {
         } else {
             searchController.searchBar.placeholder = NSLocalizedString("Search by city name", comment: "")
         }
+        
         searchController.searchBar.barTintColor = UIColor.init(red: 35.0/255, green: 163.0/255, blue: 229.0/255, alpha: 1)
+        searchController.searchBar.accessibilityIdentifier = "SearchBarOnAddCityScreen"
         self.tableView.tableHeaderView = searchController.searchBar
         definesPresentationContext = true
     }

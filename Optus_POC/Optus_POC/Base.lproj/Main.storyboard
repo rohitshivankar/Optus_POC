@@ -347,7 +347,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="41" id="BQt-on-B1c"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -356,7 +356,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="42" id="RY6-uY-H8o"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -367,8 +367,10 @@
                                                 <constraint firstItem="4Ce-TE-gFu" firstAttribute="top" secondItem="iK3-pT-Sff" secondAttribute="bottom" constant="8" symbolic="YES" id="JvD-R0-IQd"/>
                                                 <constraint firstAttribute="trailing" secondItem="iK3-pT-Sff" secondAttribute="trailing" constant="8" id="OiX-TF-jHd"/>
                                                 <constraint firstAttribute="bottom" secondItem="4Ce-TE-gFu" secondAttribute="bottom" constant="25" id="PeR-xM-Qbw"/>
+                                                <constraint firstItem="4Ce-TE-gFu" firstAttribute="top" secondItem="iK3-pT-Sff" secondAttribute="bottom" constant="8" symbolic="YES" id="Rhu-EA-pjc"/>
                                                 <constraint firstItem="iK3-pT-Sff" firstAttribute="top" secondItem="To0-gs-KIb" secondAttribute="top" constant="34" id="VBR-K4-4du"/>
                                                 <constraint firstAttribute="trailing" secondItem="4Ce-TE-gFu" secondAttribute="trailing" constant="8" id="dX1-ZS-FMX"/>
+                                                <constraint firstItem="4Ce-TE-gFu" firstAttribute="top" secondItem="iK3-pT-Sff" secondAttribute="bottom" constant="8" symbolic="YES" id="rIs-Lj-q68"/>
                                                 <constraint firstAttribute="bottom" secondItem="4Ce-TE-gFu" secondAttribute="bottom" constant="25" id="tWx-xf-YKA"/>
                                             </constraints>
                                             <variation key="default">

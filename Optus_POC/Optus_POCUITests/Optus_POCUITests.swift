@@ -9,34 +9,46 @@ import XCTest
 
 class Optus_POCUITests: XCTestCase {
 
+    var app: XCUIApplication!
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+        app = XCUIApplication()
+        app.launch()
     }
 
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
-        app.launch()
+    func testToCheckWeatherListHasCell() {
 
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let weatherTableView = app.tables.matching(identifier: "Table-WeatherListTableView")
+        let firstCell = weatherTableView.cells.element(matching: .cell, identifier: "cityWeatherListCell_0")
+        let existencePredicate = NSPredicate(format: "exists == 1")
+        let expectationEval = expectation(for: existencePredicate, evaluatedWith: firstCell, handler: nil)
+        let mobWaiter = XCTWaiter.wait(for: [expectationEval], timeout: 10.0)
+        XCTAssert(XCTWaiter.Result.completed == mobWaiter, "Test Case Failed.")
+    }
+    func testForWeatherListCellSelection() {
+        
+        let weatherTableView = app.tables.matching(identifier: "Table-WeatherListTableView")
+        let firstCell = weatherTableView.cells.element(matching: .cell, identifier: "cityWeatherListCell_0")
+        let predicate = NSPredicate(format: "isHittable == true")
+        let expectationEval = expectation(for: predicate, evaluatedWith: firstCell, handler: nil)
+        let waiter = XCTWaiter.wait(for: [expectationEval], timeout: 10.0)
+        XCTAssert(XCTWaiter.Result.completed == waiter, "Test Case Failed.")
+        firstCell.tap()
+    }
+    
+    func testForCitySearch() {
+        app.navigationBars["Weather App"].buttons["Add"].tap()
+        let AddCityTableView = app.tables.matching(identifier: "Table-AddCityTableView")
+        app.tables["Empty list"].searchFields["Search by city name"].tap()
+        app.tables["Empty list"].searchFields["Search by city name"].typeText("Pune")
+
+        let firstCell = AddCityTableView.cells.element(matching: .cell, identifier: "CityTableViewCell_0")
+        XCTAssertTrue(firstCell.exists, "Test Case Passed: 1 results returned")
+        XCTAssertTrue(firstCell.staticTexts["Pune, IN"].exists, "Test Case passed: Pune result returned")
     }
 
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
-        }
-    }
 }

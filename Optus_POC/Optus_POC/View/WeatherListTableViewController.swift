@@ -12,6 +12,7 @@ class WeatherListTableViewController: UITableViewController {
     var weatherDataModel = WeatherDataViewModel()
     var buttonFahrenheit =  UIButton()
     var buttonCelsius =  UIButton()
+    var timer : Timer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +25,14 @@ class WeatherListTableViewController: UITableViewController {
         getWeatherDataFromViewModel()
         self.tableView.accessibilityIdentifier = "Table-WeatherListTableView"
         addFooterView()
+        timer = Timer.scheduledTimer(withTimeInterval: 900.0, repeats: true) { timer in
+            self.getWeatherDataFromViewModel()
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        timer?.invalidate()
     }
     
     //MARK: - Class Private Functions
@@ -110,8 +119,7 @@ class WeatherListTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "WeatherTableViewCell") as! WeatherTableViewCell
-        //cell.cityName.text = "Pune"
-        //cell.cityTemperature.text = "32"
+        cell.accessibilityIdentifier = "cityWeatherListCell_\(indexPath.row)"
         let cityWeather = weatherDataModel.weatherListArray[indexPath.row]
         cell.setWeatherCellData(cityWeather)
         return cell
